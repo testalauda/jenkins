@@ -6,7 +6,7 @@ ci:
   - python manage.py test tests
 sonarqube:
   quality_gate: "default"
-  code_scan_path: "./src"
+  code_scan_path: "/src"
   code_encoding: "UTF-8"
-  code_language: "go"
-  integration_name: "int-sonarqube"
+  code_language: "python"
+  integration_name: "test345"
