@@ -1,0 +1,12 @@
+version: "0.1.0"
+pre_ci_boot:
+  image: index.alauda.cn/alaudaorg/razzil-ci
+  tag: latest
+ci:
+  - python manage.py test tests
+sonarqube:
+  quality_gate: "default"
+  code_scan_path: "./src"
+  code_encoding: "UTF-8"
+  code_language: "go"
+  integration_name: "int-sonarqube"
