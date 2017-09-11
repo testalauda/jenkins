@@ -214,7 +214,7 @@ def delete_pipeline(pipeline_name):
     if not get_events(pipeline_name, "destroy"):
         return {"success": False, "total": "this action do not have events"}
     time2 = time()
-    return {"success": True, "total": time2-time1}
+    return {"success": True, "total": time2-time0}
 
 
 @retry(times=settings.RETRY_TIMES)
