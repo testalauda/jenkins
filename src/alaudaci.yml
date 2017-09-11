@@ -9,4 +9,4 @@ sonarqube:
   code_scan_path: "/src"
   code_encoding: "UTF-8"
   code_language: "python"
-  integration_name: "test345"
+  integration_name: "wyztest001-staging"
