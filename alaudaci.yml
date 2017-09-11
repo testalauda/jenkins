@@ -2,8 +2,6 @@ version: "0.1.0"
 pre_ci_boot:
   image: index.alauda.cn/alaudaorg/razzil-ci
   tag: latest
-ci:
-  - python common.py
 sonarqube:
   quality_gate: "test345"
   code_scan_path: "./src"
