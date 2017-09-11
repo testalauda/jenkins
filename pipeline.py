@@ -383,6 +383,11 @@ class PipelineTest(object):
                        "message": "No <pipiline> found in region feature, pipeline case not run, please check manually"
                        }
             return warning
+       def test:
+        if :
+            
+        else:
+            print "ssf"
 
 
 
