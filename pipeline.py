@@ -40,6 +40,24 @@ def create_pipeline(pipeline_name, data):
         return {"success": True, "total": time2-time1}
     else:
         return {"success":False, "totol": "r.text is {}, r.status_code is {}".format(r.text, r.status_code)}
+    
+ def create_pipeline(pipeline_name, data):
+    delete_pipeline(pipeline_name)
+    time1 = time()
+    url = "{}pipelines/{}/config".format(settings.API_URL, settings.CLAAS_NAMESPACE)
+    print data, type(data)
+    r = requests.post(url, data=json.dumps(data), headers=headers)
+    print r.text
+    if r.status_code != 201:
+        return {"success":False, "total": "create pipeline return code error: {}, error text:{}".format(r.status_code,r.text)}
+    if not get_events(pipeline_name, "create"):
+        return {"success": False, "total": "this action do not have events"}
+    result = json.loads(r.text)
+    if "name" in result and result['name'] == pipeline_name:
+        time2 = time()
+        return {"success": True, "total": time2-time1}
+    else:
+        return {"success":False, "totol": "r.text is {}, r.status_code is {}".format(r.text, r.status_code)}
 
 
 @retry(times=settings.RETRY_TIMES)
@@ -214,7 +232,7 @@ def delete_pipeline(pipeline_name):
     if not get_events(pipeline_name, "destroy"):
         return {"success": False, "total": "this action do not have events"}
     time2 = time()
-    return {"success": True, "total": time2-time1}
+    return {"success": True, "total": time2-time0}
 
 
 @retry(times=settings.RETRY_TIMES)
@@ -383,6 +401,11 @@ class PipelineTest(object):
                        "message": "No <pipiline> found in region feature, pipeline case not run, please check manually"
                        }
             return warning
+       def test:
+        if :
+            
+        else:
+            print "ssf"
 
 
 
