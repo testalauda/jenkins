@@ -3,7 +3,8 @@ pre_ci_boot:
   image: index.alauda.cn/alaudaorg/razzil-ci
   tag: latest
 ci:
-  - python manage.py test tests
+  - echo "hello word" > /test.txt
+  - cp -r /test.txt $ALAUDACI_UPLOAD_DIR
 sonarqube:
   quality_gate: "default"
   code_scan_path: "/src"
