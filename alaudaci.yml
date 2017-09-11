@@ -5,8 +5,8 @@ pre_ci_boot:
 ci:
   - python common.py
 sonarqube:
-  quality_gate: "default"
+  quality_gate: "test345"
   code_scan_path: "./src"
   code_encoding: "UTF-8"
-  code_language: "python"
+  code_language: "py"
   integration_name: "52d9eb2b-789b-41e0-bc4c-e759ff6aa958"
