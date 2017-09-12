@@ -3,5 +3,5 @@ sonarqube:
   quality_gate: "test345"
   code_scan_path: "./src"
   code_encoding: "UTF-8"
-  code_language: "python"
+  code_language: "py"
   integration_name: "wyztest001-staging"
