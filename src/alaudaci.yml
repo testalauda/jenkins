@@ -1,6 +1,6 @@
 version: "0.1.0"
 sonarqube:
-  quality_gate: "default"
+  quality_gate: "test345"
   code_scan_path: "./src"
   code_encoding: "UTF-8"
   code_language: "python"
