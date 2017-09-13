@@ -1,7 +1,4 @@
 version: "0.1.0"
-pre_ci_boot:
-  image: index.alauda.cn/alaudaorg/razzil-ci
-  tag: latest
 ci:
   - echo "hello word" > /test.txt
   - cp -r /test.txt $ALAUDACI_UPLOAD_DIR
