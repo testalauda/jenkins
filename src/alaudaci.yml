@@ -1,7 +1,4 @@
 version: "0.1.0"
-ci:
-  - echo "hello word" > /test.txt
-  - cp -r /test.txt $ALAUDACI_UPLOAD_DIR
 sonarqube:
   quality_gate: "SonarQube way"
   code_scan_path: "src"
