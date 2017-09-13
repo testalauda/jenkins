@@ -5,7 +5,7 @@
      * maxSize:文件容量上限 
      * callback:回调函数，返回三个参数：文件真名、文件存放名和文件大小 
      */  
-    function openUpload(functionId,fileType,maxSize,callback){  
+    function openUpload1(functionId,fileType,maxSize,callback){  
         var url = root+"/CommonController.jhtml?method=goFileUpload&";  
         if(functionId!=null){  
             url = url + "functionId="+functionId+"&";  
@@ -29,7 +29,7 @@
      * maxSize:文件容量上限 
      * callback:回调函数，返回三个参数：文件真名、文件存放名和文件大小 
      */  
-    function openUpload(functionId,fileType,maxSize,callback){  
+    function openUpload2(functionId,fileType,maxSize,callback){  
         var url = root+"/CommonController.jhtml?method=goFileUpload&";  
         if(functionId!=null){  
             url = url + "functionId="+functionId+"&";  
@@ -53,7 +53,7 @@
      * maxSize:文件容量上限 
      * callback:回调函数，返回三个参数：文件真名、文件存放名和文件大小 
      */  
-    function openUpload(functionId,fileType,maxSize,callback){  
+    function openUpload3(functionId,fileType,maxSize,callback){  
         var url = root+"/CommonController.jhtml?method=goFileUpload&";  
         if(functionId!=null){  
             url = url + "functionId="+functionId+"&";  
