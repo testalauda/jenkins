@@ -1,4 +1,4 @@
-public class CommonController extends BaseController {  
+public class CommonController1 extends BaseController {  
     Log log = LogFactory.getLog(CommonController.class);  
       
     Properties fileUploadPro = null;  
@@ -129,7 +129,7 @@ public class CommonController extends BaseController {
         return null;  
     }  
 } 
-public class CommonController extends BaseController {  
+public class CommonController2 extends BaseController {  
     Log log = LogFactory.getLog(CommonController.class);  
       
     Properties fileUploadPro = null;  
