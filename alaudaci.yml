@@ -5,9 +5,3 @@ pre_ci_boot:
 ci:
   - echo "hello word" > /test.txt
   - cp -r /test.txt $ALAUDACI_UPLOAD_DIR
-sonarqube:
-  quality_gate: "test345"
-  code_scan_path: "./src"
-  code_encoding: "UTF-8"
-  code_language: "py"
-  integration_name: "52d9eb2b-789b-41e0-bc4c-e759ff6aa958"
