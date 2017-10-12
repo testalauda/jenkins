@@ -1,6 +1,6 @@
 version: "0.1.0"
 pre_ci_boot:
-  image: index.alauda.cn/alaudaorg/razzil-ci
+  image: alb-mesos-testorg001.stagingindex.alauda.cn:5000/yzwang/wyzgithub0001
   tag: latest
 ci:
   - echo "hello word" > /test.txt
