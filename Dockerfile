@@ -1,2 +1,2 @@
 FROM index.alauda.cn/alaudaorg/qaimages:volumetest 
-LABEL Version="1.1.331"
+LABEL Version="1.1.31"
