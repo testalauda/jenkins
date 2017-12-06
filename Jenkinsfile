@@ -13,8 +13,7 @@ pipeline{
         }
         stage('Deploy-Staging'){
             steps{
-                sh './deploystaging'
-                sh './run-smoke-tests'
+                sh 'cat ./a.sh'
             }
         }
         stage('Sanitycheck'){
