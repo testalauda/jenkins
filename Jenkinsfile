@@ -1,40 +1,32 @@
 pipeline{
     agent{
         label'Production'
-    }stages{
+    }
+    stages{
         stage('Build'){
             steps{
                 echo'Building'
             }
-        }stage('Test'){
+        }
+        stage('Test'){
             steps{
                 echo'Testing'
             }
-        }stage('Deploy-Staging'){
+        }
+        stage('Deploy-Staging'){
             steps{
                 sh'./deploystaging'sh'./run-smoke-tests'
             }
-        }stage('Sanitycheck'){
+        }
+        stage('Sanitycheck'){
             steps{
                 input"Does the staging environment look ok?"
             }
-        }stage('Deploy-Production'){
+        }
+        stage('Deploy-Production'){
             steps{
                 sh'./deployproduction'
             }
-        }
-    }post{
-        always{
-            echo'Onewayoranother,
-            Ihavefinished'deleteDir()/*cleanupourworkspace*/
-        }success{
-            echo'Isucceeeded!'
-        }unstable{
-            echo'Iamunstable: /'
-        }failure{
-            echo'Ifailed: ('
-        }changed{
-            echo'Thingsweredifferentbefore...'
         }
     }
 }
