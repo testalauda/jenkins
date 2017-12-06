@@ -1,31 +1,32 @@
 pipeline{
     agent{
-        label'Production'
+        label 'Production'
     }
     stages{
         stage('Build'){
             steps{
-                echo'Building'
+                echo 'Building'
             }
         }
         stage('Test'){
             steps{
-                echo'Testing'
+                echo 'Testing'
             }
         }
         stage('Deploy-Staging'){
             steps{
-                sh'./deploystaging'sh'./run-smoke-tests'
+                sh './deploystaging'
+                sh './run-smoke-tests'
             }
         }
         stage('Sanitycheck'){
             steps{
-                input"Does the staging environment look ok?"
+                input "Does the staging environment look ok?"
             }
         }
         stage('Deploy-Production'){
             steps{
-                sh'./deployproduction'
+                sh './deployproduction'
             }
         }
     }
