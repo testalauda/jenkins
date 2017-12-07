@@ -16,14 +16,10 @@ pipeline{
                 sh 'cat ./a.sh'
             }
         }
-        stage('Sanitycheck'){
-            steps{
-                input "Does the staging environment look ok?"
-            }
-        }
+        
         stage('Deploy-Production'){
             steps{
-                sh './deployproduction'
+                echo 'Deploy-Production'
             }
         }
     }
