@@ -420,6 +420,3 @@ def test_process(data, region, text='Hello', full_data=False):
     return obj
 
 
-def add_to_total_dict(obj, app_name):
-    obj["{} total".format(app_name)] = obj.get('total')
-    return obj
