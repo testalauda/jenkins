@@ -767,23 +767,7 @@ class ServiceData(object):
                 80
             ],
             "instance_envvars": {},
-            "load_balancers": [
-                {
-                    "type": self.lb_type,
-                    "name": self.alb_name,
-                    "load_balancer_id": self.lb_id,
-                    "listeners":[
-                        {
-                            "domains": [
-                                "hchan.cn"
-                            ],
-                            "certificate_name": self.centificate_name,
-                            "certificate_id": self.centificate_id,
-                            "container_port": 80,
-                            "protocol": "https",
-                            "listener_port": 5050
-                        }
-                    ],
+            
                     "version": 1
                 }
             ],
