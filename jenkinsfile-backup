@@ -16,6 +16,12 @@ pipeline{
                 sh 'cat ./a.sh'
             }
         }
+        stage('Approve'){  
+            steps{
+                input message: 'Do you want to deploy?', submitter: 'ops' 
+            }
+        }  
+        
         stage('Sanitycheck'){
             steps{
                 input "Does the staging environment look ok?"
