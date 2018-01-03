@@ -4,7 +4,6 @@ pipeline{
         stage('Build'){
             steps{
                 echo 'Building'
-                sleep 10
             }
         }
         stage('Test'){
@@ -12,6 +11,11 @@ pipeline{
                 echo 'Testing'
             }
         }
+        stage('Approve'){  
+            steps{
+                input message: 'Do you want to deploy?', submitter: 'ops' 
+            }
+        } 
         stage('Deploy-Staging'){
             steps{
                 echo 'Deploy-Staging12345yuykjhgdf'
