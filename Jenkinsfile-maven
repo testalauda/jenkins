@@ -1,0 +1,30 @@
+node{
+    
+  stage("Checkout"){
+    git url:"https://github.com/chengjingtao/maven-hello.git"
+  }
+
+  stage("Build"){
+    sh "mvn compile"
+  }
+
+  stage("Test"){
+    sh "mvn test"
+  }
+
+  stage("Package"){
+      sh "mvn package"
+  }
+
+  stage("Build-Push-Image"){
+    docker.withRegistry("https://index.alauda.cn", "index.alauda.cn-jtcheng"){
+      docker.build("index.alauda.cn/alaudaorg/maven-hello").push()
+    }
+  }
+  
+  stage('Results') {
+      junit '**/target/surefire-reports/TEST-*.xml'
+      archive 'target/*.jar'
+   }
+
+}
