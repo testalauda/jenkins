@@ -1,0 +1,18 @@
+pipeline{
+    agent any
+    stages{
+         
+        stage("Build"){
+            timeout(time:20, unit:'MINUTES'){
+                alauda.startBuild("razzil", "${GIT_COMMIT_ID}")
+            }
+        }
+
+    }
+ 
+    post{
+        always{
+            alauda.notify("yzwang")
+        }
+    }
+}
