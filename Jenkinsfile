@@ -4,13 +4,13 @@ pipeline{
         stage('Build'){
             steps{
                 echo 'Building'
-                sleep 10
+               
             }
         }
         stage('Test'){
             steps{
                 echo 'Testing'
-                sleep 10
+               
             }
         }
         stage('Approve'){  
@@ -20,10 +20,7 @@ pipeline{
         }
         stage('Deploy-Staging'){
             steps{
-                echo 'Deploy-Staging'
-                input message: 'Do you want to deploy?', submitter: 'ops'
-                echo 'Deploy-Staging'
-                sleep 3
+         
                 echo 'Deploy-Staging'
                 echo 'Deploy-Staging'
                 echo 'Deploy-Staging'
