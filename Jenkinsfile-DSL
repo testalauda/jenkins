@@ -3,11 +3,12 @@ pipeline{
     stages{
          
         stage("Build"){
-            timeout(time:20, unit:'MINUTES'){
-                script{
-                    alauda.startBuild("testorg001", "${GIT_COMMIT_ID}")
+            steps{
+                timeout(time:20, unit:'MINUTES'){
+                    script{
+                        alauda.startBuild("testorg001", "${GIT_COMMIT_ID}")
+                    }
                 }
-                
             }
         }
 
