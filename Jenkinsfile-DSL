@@ -6,7 +6,7 @@ pipeline{
             steps{
                 timeout(time:20, unit:'MINUTES'){
                     script{
-                        alauda.startBuild("svntest00123123", "")
+                        alauda.startBuild("wyzgithub", "")
                     }
                 }
             }
