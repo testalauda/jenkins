@@ -6,7 +6,7 @@ pipeline{
             steps{
                 timeout(time:20, unit:'MINUTES'){
                     script{
-                        alauda.startBuild("oschinatest23123", "")
+                        alauda.startBuild("svntest00123123", "")
                     }
                 }
             }
