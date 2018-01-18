@@ -18,7 +18,7 @@ pipeline{
         }
         stage('Approve'){  
             steps{
-                input message: 'Do you want to deploy?', submitter: 'ops' 
+                input message: 'Do you want to deploy?'
             }
         }  
         
@@ -30,7 +30,6 @@ pipeline{
         stage('Deploy-Production'){
             steps{
                 echo 'Deploy-Staging'
-                input message: 'Do you want to deploy?', submitter: 'ops' 
             }
         }
     }
