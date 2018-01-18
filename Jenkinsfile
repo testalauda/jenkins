@@ -15,7 +15,9 @@ pipeline{
         }
         stage('Approve'){  
             steps{
-                input message: 'Do you want to deploy?', submitter: 'ops' 
+                input message: 'Do you want to deploy?' 
+                input message: 'Do you want to deploy?'
+                input message: 'Do you want to deploy?'
             }
         }
         stage('Deploy-Staging'){
