@@ -16,8 +16,7 @@ pipeline{
         stage('Approve'){  
             steps{
                 input message: 'Do you want to deploy?' 
-                input message: 'Do you want to deploy?'
-                input message: 'Do you want to deploy?'
+               
             }
         }
         stage('Deploy-Staging'){
@@ -57,7 +56,7 @@ pipeline{
                 echo 'Deploy-Staging'
                 echo 'Deploy-Staging'
                 echo 'Deploy-Staging'
-                sleep 10
+                
               
             }
         }
@@ -65,7 +64,7 @@ pipeline{
         stage('Deploy-Production'){
             steps{
                 echo 'Deploy-Production'
-                sleep 10
+                
             }
         }
     }
