@@ -13,10 +13,17 @@ pipeline{
                 sleep 10
             }
         }
+        stage('Approve'){  
+            steps{
+                input message: 'Do you want to deploy?', submitter: 'ops' 
+            }
+        }
         stage('Deploy-Staging'){
             steps{
                 echo 'Deploy-Staging'
+                input message: 'Do you want to deploy?', submitter: 'ops'
                 echo 'Deploy-Staging'
+                sleep 3
                 echo 'Deploy-Staging'
                 echo 'Deploy-Staging'
                 echo 'Deploy-Staging'
