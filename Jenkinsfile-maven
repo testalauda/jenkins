@@ -8,7 +8,7 @@ node{
     sh "mvn compile"
   }
 
-  stage("Test"){
+  stage("Test11"){
     sh "mvn test"
   }
 
