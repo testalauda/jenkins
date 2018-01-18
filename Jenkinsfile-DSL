@@ -4,7 +4,10 @@ pipeline{
          
         stage("Build"){
             timeout(time:20, unit:'MINUTES'){
-                alauda.startBuild("testorg001", "${GIT_COMMIT_ID}")
+                script{
+                    alauda.startBuild("testorg001", "${GIT_COMMIT_ID}")
+                }
+                
             }
         }
 
@@ -12,7 +15,10 @@ pipeline{
  
     post{
         always{
-            alauda.notify("yzwang1")
+            script{
+                alauda.notify("yzwang1")
+            }
+            
         }
     }
 }
