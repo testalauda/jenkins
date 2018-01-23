@@ -4,8 +4,3 @@ dfhasfd
 adsasd
 adsasd
 asdfbfasfdnb
-
-asasdgyasgdkajsdlsadvx
-沙发发发生
-qwerg
-
