@@ -768,7 +768,7 @@ class ServiceData(object):
             ],
             "instance_envvars": {},
             
-                    "version": 1
+                    "version": 23
                 }
             ],
             "space_name": self.space_name,
