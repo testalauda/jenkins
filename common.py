@@ -406,7 +406,7 @@ def test_process(data, region, text='Hello', full_data=False):
     else:
         obj = {
             "success": test_flag,
-            "{} create".format(app_name): ret_create,
+            "{} create".format(app_name): ret_create1,
             "{} get logs".format(app_name): ret_logs,
             "{} get metrics".format(app_name): ret_metrics,
             "{} exec_feature".format(app_name): ret_exec,
