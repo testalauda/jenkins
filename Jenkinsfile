@@ -13,7 +13,7 @@ pipeline{
                
             }
         }
-        stage('Approve123'){  
+        stage('Approve'){  
             steps{
                 timeout(time:3, unit:'MINUTES'){
                     script{
