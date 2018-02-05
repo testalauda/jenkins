@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'BuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuildingBuilding'
+                echo 'Building'
                
             }
         }
@@ -27,40 +27,9 @@ pipeline{
         stage('Deploy-Staging1'){
             steps{
          
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
-                echo 'Deploy-Staging'
+                echo 'Deploy-Staging1'
+                echo 'Deploy-Staging2'
+                
                 
               
             }
