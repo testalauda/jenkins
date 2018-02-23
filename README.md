@@ -4,6 +4,3 @@ dfhasfd
 adsasd
 adsasd
 asdfbfasfdnb
-sdfghjkl
-asdasdad
-asdfgh
