@@ -3,14 +3,22 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'Building123'
-               
+                echo 'Building'
+                echo 'Building'
+                echo 'Building'
+                echo 'Building'
+                echo 'Building'
+                echo 'Building'
+                
             }
         }
         stage('Test'){
             steps{
-                echo 'Testing12'
-               
+                echo 'Testing'
+                echo 'Testing'
+                echo 'Testing'
+                echo 'Testing'
+                echo 'Testing'
             }
         }
         stage('Approve'){  
