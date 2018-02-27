@@ -3,40 +3,32 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'Building123'
-               
+                echo 'Building'     
             }
         }
         stage('Test'){
             steps{
-                echo 'Testing12'
-               
+                echo 'Testing' 
             }
         }
         stage('Approve'){  
             steps{
-                timeout(time:15, unit:'MINUTES'){
+                timeout(time:3, unit:'MINUTES'){
                     script{
                         input message: 'Do you want to deploy?'
                     }
                 }
             }
         }
-        stage('Deploy-Staging1'){
+        stage('Deploy-Staging'){
             steps{
-         
-                echo 'Deploy-Staging1'
-                echo 'Deploy-Staging2'
-                
-                
-              
+                echo 'Deploy-Staging' 
             }
         }
         
         stage('Deploy-Production'){
             steps{
-                echo 'Deploy-Production'
-                
+                echo 'Deploy-Production'   
             }
         }
     }
