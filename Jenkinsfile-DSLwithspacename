@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    stages{
+         
+        stage("Build"){
+            steps{
+                timeout(time:15, unit:'MINUTES'){
+                    script{
+                      alauda.withSpace("staging"){
+                        alauda.startBuild("e2e-buildConfigForDSLk8s-staging", "")  
+					  }
+                    }
+                }
+            }
+        }
+    }
+}
