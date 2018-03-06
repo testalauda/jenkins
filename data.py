@@ -52,7 +52,7 @@ class ServiceData(object):
             "network_mode": "BRIDGE",
             "region_name": self.region_name,
             "scaling_mode": "MANUAL",
-            "service_mode": "SINGLE",
+            "service_mode": "SINGLEqw",
             "target_num_instances": 1,
             "target_state": "STARTED",
             "space_name": settings.SPACE_NAME
