@@ -1,0 +1,7 @@
+version: "0.1.0"
+pre_ci_boot:
+  image: index-staging.alauda.cn/testorg001/qausefulimages
+  tag: volumetest
+ci:
+  - echo "hello word" > /test.txt
+  - cp -r /test.txt $ALAUDACI_UPLOAD_DIR
