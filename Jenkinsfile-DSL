@@ -6,7 +6,7 @@ pipeline{
             steps{
                 timeout(time:15, unit:'MINUTES'){
                     script{
-                        alauda.startBuild("wyzgithub-quickgit001", "")
+                        alauda.startBuild("wyzgithub", "")
                     }
                 }
             }
