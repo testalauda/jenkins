@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+         
+        stage("Build"){
+            steps{
+                timeout(time:15, unit:'MINUTES'){
+                    script{
+                        alauda.startBuild("wyzgithub001", "")
+                    }
+                }
+            }
+        }
+
+    }
+ 
+    post{
+        always{
+            script{
+                alauda.notify("yzwang1")
+            }
+            
+        }
+    }
+}
