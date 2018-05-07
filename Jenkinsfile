@@ -24,7 +24,7 @@ pipeline{
             steps{
                 timeout(time:15, unit:'MINUTES'){
                     script{
-                        #input message: 'Do you want to deploy?'
+                        //input message: 'Do you want to deploy?'
                         input message: 'Do you want to deploy?', submitter: 'ops'
                     }
                 }
