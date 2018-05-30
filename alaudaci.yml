@@ -2,11 +2,15 @@ version: "0.1.0"
 pre_ci_boot:
   #image: index.alauda.cn/alaudaorg/razzil-ci
   #tag: latest
-  image: index.alauda.cn/library/nginx
-  tag: 1.9.12
+  #image: index.alauda.cn/library/nginx
+  image: index.alauda.cn/alaudaorg/qaimages
+  tag: helloworld
 ci:
-  - echo "hello word" > /test.txt
-  - cp -r /test.txt $ALAUDACI_UPLOAD_DIR
+  #- echo "hello word" > /test.txt
+  #- cp -r /test.txt $ALAUDACI_UPLOAD_DIR
+  python
+  print "asd"
+  exit()
 #sonarqube:
  # quality_gate: "test345"
  # code_scan_path: "./src"
